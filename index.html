@@ -56,13 +56,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto h1">
             <li class="nav-item mr-3">
-              <a href="" class="nav-link">Link 1</a>
+              <a href="#pickyourbuddy" class="nav-link">pick your buddy</a>
             </li>
             <li class="nav-item mr-3">
-              <a href="" class="nav-link">Link 2</a>
-            </li>
-            <li class="nav-item mr-3">
-              <a href="" class="nav-link">Link 3</a>
+              <a href="#signup" class="nav-link">sign up now</a>
             </li>
           </ul>
         </div>
@@ -117,7 +114,7 @@
         </div>
       </div>
     </div>
-    <div class="container mt-4">
+    <div id="pickyourbuddy" class="container mt-4">
       <div class="container text-center mt-5 mb-5">
         <p class="h1 text-danger">♥</p>
         <h2 class="h1">
@@ -251,6 +248,100 @@
                 >Pick this buddy <span class="text-danger">♥</span></a
               >
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="signup" class="container-fluid bg-light">
+      <div class="text-center pt-5 pb-5 h1">
+        Sign up now to meet your <span class="text-muted">coding buddy</span>
+      </div>
+      <div class="container">
+        <div class="card">
+          <div class="card-body p-5">
+            <form>
+              <div class="form-group row">
+                <label for="email" class="col-sm-4 col-form-label"
+                  >Email address</label
+                >
+                <div class="col-sm-8">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="name@example.com"
+                  />
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="pickbuddy" class="col-sm-4 col-form-label"
+                  >Please pick your favorite buddy</label
+                >
+                <div class="col-sm-8">
+                  <select id="pickbuddy" class="form-control form-control-lg">
+                    <option>Who is your favorite code buddy?</option>
+                    <option value="1">Morpheus</option>
+                    <option value="2">Agent Smith</option>
+                    <option value="3">Mr. Anderson</option>
+                    <option value="4">Trinity</option>
+                    <option value="5">Neo</option>
+                    <option value="6">The Oracle</option>
+                  </select>
+                </div>
+              </div>
+              <fieldset class="form-group">
+                <div class="row">
+                  <legend class="col-form-label col-sm-4 pt-0">
+                    When do you want to meet?
+                  </legend>
+                  <div class="col-sm-8">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="gridRadios"
+                        id="gridRadios1"
+                        value="option1"
+                        checked
+                      />
+                      <label class="form-check-label" for="gridRadios1">
+                        Today
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="gridRadios"
+                        id="gridRadios2"
+                        value="option2"
+                      />
+                      <label class="form-check-label" for="gridRadios2">
+                        Tomorrow
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="gridRadios"
+                        id="gridRadios3"
+                        value="option3"
+                      />
+                      <label class="form-check-label" for="gridRadios3">
+                        The day after tomorrow
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+              <button
+                class="btn btn-primary btn-lg btn-block mt-5 mb-5"
+                type="submit"
+              >
+                It's a match!
+              </button>
+            </form>
           </div>
         </div>
       </div>
