@@ -16,6 +16,9 @@
       crossorigin="anonymous"
     />
 
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/valentine.css" />
+
     <title>Hello, world!</title>
   </head>
   <body>
@@ -55,10 +58,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto h1">
-            <li class="nav-item mr-3">
+            <li class="nav-item pr-2 rounded-pill">
               <a href="#pickyourbuddy" class="nav-link">pick your buddy</a>
             </li>
-            <li class="nav-item mr-3">
+            <li class="nav-item pl-2 rounded-pill">
               <a href="#signup" class="nav-link">sign up now</a>
             </li>
           </ul>
@@ -66,28 +69,36 @@
       </nav>
     </header>
     <div class="container-fluid">
-      <div id="codebuddies" class="carousel slide" data-ride="carousel">
+      <div
+        id="codebuddies"
+        class="carousel slide"
+        data-ride="carousel"
+        style="max-height:650px;height:100%;"
+      >
         <ol class="carousel-indicators">
           <li data-target="#codebuddies" data-slide-to="0" class="active"></li>
           <li data-target="#codebuddies" data-slide-to="1"></li>
           <li data-target="#codebuddies" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div
+            class="carousel-item active"
+            style="max-height:650px;height:100%;"
+          >
             <img src="../img/1.jpg" class="d-block w-100" alt="" />
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption d-md-block">
               <h2 class="h1">Find your codebuddy!</h2>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" style="max-height:650px;height:100%;">
             <img src="../img/2.jpg" class="d-block w-100" alt="" />
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption d-md-block">
               <h2 class="h1">Better than HTMLhint and prettier combined!</h2>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" style="max-height:650px;height:100%;">
             <img src="../img/3.jpg" class="d-block w-100" alt="" />
-            <div class="carousel-caption d-none d-md-block">
+            <div class="carousel-caption d-md-block">
               <h2 class="h1">Buy now!</h2>
               <button class="btn-primary btn-lg">Blue pill</button>
               <button class="btn-danger btn-lg">Red pill</button>
@@ -270,7 +281,7 @@
                 <div class="col-sm-8">
                   <input
                     type="email"
-                    class="form-control"
+                    class="form-control form-control-lg"
                     id="email"
                     placeholder="name@example.com"
                   />
@@ -290,6 +301,18 @@
                     <option value="5">Neo</option>
                     <option value="6">The Oracle</option>
                   </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="likerange" class="col-sm-4 col-form-label"
+                  >How much do you like that code buddy?</label
+                >
+                <div class="col-sm-8 pt-3">
+                  <input
+                    type="range"
+                    class="form-control-range slider"
+                    id="likerange"
+                  />
                 </div>
               </div>
               <fieldset class="form-group">
@@ -339,7 +362,7 @@
                 </div>
               </fieldset>
               <button
-                class="btn btn-danger btn-lg btn-block mt-5 mb-5"
+                class="btn btn-danger btn-lg btn-block mt-5"
                 type="submit"
               >
                 It's a match!
@@ -348,8 +371,30 @@
           </div>
         </div>
       </div>
+      <div class="container mt-5 pb-5">
+        <div class="text-center pt-5 pb-5 h1">
+          Where to meet your <span class="text-muted">coding buddy</span>
+        </div>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2514.2079615525145!2d6.943630015681308!3d50.93836697954564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bf25cfceaf61a1%3A0xf8b9b47c77a23ff6!2sSpaces%20-%20Cologne%2C%20Spaces%20Breite%20Strasse!5e0!3m2!1sen!2sde!4v1581602153264!5m2!1sen!2sde"
+            width="600"
+            height="450"
+            frameborder="0"
+            style="border:0;"
+            allowfullscreen=""
+          ></iframe>
+        </div>
+      </div>
     </div>
-
+    <footer class="footer mt-auto py-3">
+      <div class="container text-center">
+        <span class="text-muted"
+          >&copy; The codebuddies
+          <span class="text-danger">♥</span> company.</span
+        >
+      </div>
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
